@@ -35,3 +35,22 @@ from area import *
 
 print(circle(2))
 print(PI)
+
+# 모듈의 클래스도 가져올 수 있음
+# import <module>
+import shapes2d
+
+circle = shapes2d.Circle(2)
+print(circle.area())
+
+# from <module> import <member(s)>
+from shapes2d import Square, Circle
+
+square = Square(3)
+print(square.area())
+
+# from <module> import <member(s)> as <별칭>
+from shapes2d import Square as Sq
+
+square = Sq(3)
+print(square.area())
