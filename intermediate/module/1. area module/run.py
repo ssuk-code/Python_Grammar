@@ -91,8 +91,33 @@ print(sq(3))
 # 모듈 안에 실행문을 작성하면 import할 때 모두 실행됨
 import area
 
-x = float(input('원의 반지름을 입력해주세요: '))
-print('반지름이 {}인 원의 면적은 {}입니다.\n'.format(x, area.circle(x)))
+# x = float(input('원의 반지름을 입력해주세요: '))
+# print('반지름이 {}인 원의 면적은 {}입니다.\n'.format(x, area.circle(x)))
 
-y = float(input('정사각형의 변의 길이를 입력해주세요: '))
-print('변의 길이가 {}인 정사각형의 면적은 {}입니다.\n'.format(y, area.square(x)))
+# y = float(input('정사각형의 변의 길이를 입력해주세요: '))
+# print('변의 길이가 {}인 정사각형의 면적은 {}입니다.\n'.format(y, area.square(x)))
+
+# __name__ 특수 변수
+# 모듈 안에 실행문을 실행시키지 않고 가져오는 방법
+# __main__ : 파일을 직접 실행하면 __name__은 __main__으로 설정
+# <module> : 파일을 임포트하면 __name__은 모듈 이름으로 설정
+print('run 파일 이름 : {}'.format(__name__))
+
+import area
+
+print('run.py 파일 실행됨')
+
+# 코드의 가독성을 높이는 법
+# main함수가 요구되지 않더라도 if __name__ == '__main__'과 main() 사용을 권장
+import area
+
+# 면적 계산기 프로그램
+def main():
+        x = float(input('원의 지름을 입력해 주세요: '))
+        print('지름이 {}인 원의 면적은 {}입니다.\n'.format(x, area.circle(x)))
+
+        y = float(input('정사각형의 변의 길이를 입력해 주세요: '))
+        print('변의 길이가 {}인 정사각형의 면적은 {}입니다.'.format(y, area.square(y)))
+
+if __name__ == '__main__':
+    main()
