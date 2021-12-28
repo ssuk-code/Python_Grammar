@@ -54,3 +54,13 @@ from shapes2d import Square as Sq
 
 square = Sq(3)
 print(square.area())
+
+# dir(module)) : 모듈의 기능 확인하기
+# 함수와 상수, 클래스뿐만 아니라 __특수변수__(__builtins__ 등) 확인 가능
+print(dir(area))
+
+# dir() : 현재 파일의 기능 확인하기
+# import 방식에 따라 dir()로 나오는 기능의 이름이 바뀜
+# as를 이용한 import는 축약형으로 출력
+# 특정 함수만 import한 경우는 함수 이름만 출력
+print(dir())
