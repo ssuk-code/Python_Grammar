@@ -64,3 +64,23 @@ print(dir(area))
 # as를 이용한 import는 축약형으로 출력
 # 특정 함수만 import한 경우는 함수 이름만 출력
 print(dir())
+
+# 네임 스페이스
+# 같은 함수명으로 여러개의 함수가 정의되었을 때 가장 나중에 정의된 함수 호출
+from area import circle, square
+
+def square(length):
+    return 4 * length
+
+# area의 square 함수가 아닌 나중에 정의한 square 함수를 출력
+print(square(3))
+
+# 중복을 막기 위해 모듈 그대로 import하거나 축약형을 써서 바꿔줘야 함
+import area
+print(area.square(3))
+
+from area import circle as cr, square as sq
+print(sq(3))
+
+# from <module> import *이 권장되지 않는 이유
+# 모듈의 모든것을 가져오기 때문에 가져온 것을 확인하기 어렵고, 중복될 확률이 높아짐
