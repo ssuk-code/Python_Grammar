@@ -1,0 +1,45 @@
+스탠다드 라이브러리 : 따로 설치하지 않아도 됨(파이썬에 내장되어 있음)
+외부 라이브러리 : 필요한 라이브러리를 PyPI에서 직접 설치 받아야 함
+
+데이터 분석 & 시각화
+- numpy : 행렬(다차원 배열)을 다루는 패키지, 데이터 분석이나 머신 러닝시 데이터가 행렬 형식인 경우 사용
+- https://numpy.org/
+
+- pandas : 데이터를 우리가 쉽게 다룰 수 있는 테이블 형식으로 만들어줌
+- https://pandas.pydata.org/
+
+- matplotlib : 데이터 시각화 라이브러리
+- https://matplotlib.org/
+
+- seaborn : matplotlib를 기반으로 한 시각화 라이브러리, matplotlib 보다 간단한 문법을 사용해서 더 예쁜 그래프
+- https://seaborn.pydata.org/
+
+머신러닝
+- sklearn : 대중적인 머신 러닝 라이브러리, 기본적인 머신 러닝 알고리즘, 데이터 가공, 모델 평가 기능
+- https://scikit-learn.org/stable/
+
+- tensorflow, pytorch, keras : 딥러닝에 최적화된 라이브러리, 컴퓨터 비전에 많이 사용되는 CNN (Convolutional Neural Network), 자연어 처리에 많이 사용되는 RNN (Recurrent Neural Network) 모델 등을 구현
+- https://www.tensorflow.org/?hl=ko (한국어), https://pytorch.org/, https://keras.io/
+
+- nltk : 텍스트 데이터 가공, 시각화 등을 지원하는 자연어 처리 라이브러리
+- https://www.nltk.org/
+
+웹개발
+- django : 웹 프레임워크
+- https://www.djangoproject.com/
+
+- flask : 웹 프레임워크, 기본적인 기능만 제공하지만 비교적 간단
+- https://flask.palletsprojects.com/en/1.1.x/
+
+기타
+- beautifulsoup4 : html 또는 xml 문서를 파싱(원하는 데이터를 특정 패턴이나 순서로 추출해 가공하는 것)해주는 라이브러리, 웹에서 원하는 데이터를 긁어 오는 작업인 웹 스크레이핑 (web scraping)에 많이 사용
+- https://www.crummy.com/software/BeautifulSoup/bs4/doc/
+
+- selenium : 웹 브라우저 동작을 자동화해 주는 패키지, 클릭, 로그인, 검색, 스크롤링 등을 자동화, 웹 애플리케이션 테스팅 자동화와 웹 스크레이핑
+- https://github.com/SeleniumHQ/selenium/, https://selenium-python.readthedocs.io/
+
+- requests : 간편한 http 라이브러리, http 요청
+- https://requests.readthedocs.io/en/master/
+
+- opencv : 컴퓨터 비전에 많이 사용되는 라이브러리, 이미지 프로세싱, 얼굴 인식, 문자 인식 등
+- https://opencv.org/
