@@ -1,5 +1,6 @@
 # '선형 탐색(Linear Search)' 알고리즘
 # 리스트의 처음부터 끝까지 순서대로 하나씩 탐색을 진행하는 알고리즘
+# 정렬이 되지 않은 리스트를 탐색할 때 사용
 
 # 리스트 요소와 비교하여 element 위치 찾는 함수
 def linear_search(element, some_list):
